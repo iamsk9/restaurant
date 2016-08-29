@@ -1,0 +1,16 @@
+<ion-view view-title="Place Order">
+  <ion-content><br>
+    <div class="list card">
+    <div ng-repeat="list_item in list_items">
+      <div class="item item-body">
+        <img class="full-image" src={{list_item.image_name}}>
+        <p><center>{{list_item.cat_name}}</center>
+      </p>
+      </div>
+    </div>
+    </div>
+    <center><button class="button button-positive" ng-click="vm.place_order()">
+        Place Order
+    </button></center>
+  </ion-content>
+</ion-view>
